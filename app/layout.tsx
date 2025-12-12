@@ -6,8 +6,22 @@ import { Providers } from "@/components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI FLOW - AI Workflows for Everyone",
-  description: "通过飞书、n8n、Coze 构建自动化工作流,提升个人与团队效率",
+  title: "ShareWorld - Build AI Workflows That Work for You",
+  description: "ShareWorld helps individuals and teams automate content creation, data processing, and daily operations with AI-powered workflows—no coding required.",
+  keywords: ["AI workflows", "automation", "no-code", "AI agents", "workflow builder", "productivity"],
+  authors: [{ name: "ShareWorld LLC" }],
+  openGraph: {
+    title: "ShareWorld - Build AI Workflows That Work for You",
+    description: "Automate content creation, data processing, and daily operations with AI-powered workflows—no coding required.",
+    type: "website",
+    locale: "en_US",
+    siteName: "ShareWorld",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ShareWorld - Build AI Workflows That Work for You",
+    description: "Automate content creation, data processing, and daily operations with AI-powered workflows—no coding required.",
+  },
 };
 
 export default function RootLayout({

@@ -12,10 +12,11 @@ export function Navbar() {
   const { t } = useTranslation();
 
   const navItems = [
-    { label: t("navHome"), href: "#home" },
-    { label: t("navFeatures"), href: "#features" },
-    { label: t("navUseCases"), href: "#use-cases" },
-    { label: t("navContact"), href: "#contact" },
+    { label: t("navHome"), href: "/" },
+    { label: t("navProduct"), href: "/product" },
+    { label: t("navPricing"), href: "/pricing" },
+    { label: t("navAbout"), href: "/about" },
+    { label: t("navContact"), href: "/contact" },
   ];
 
   return (
@@ -24,7 +25,7 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-3 text-xl font-bold text-white group">
+            <a href="/" className="flex items-center gap-3 text-xl font-bold text-white group">
               <Logo className="w-8 h-8 transition-transform group-hover:scale-110" />
               {t("siteName")}
             </a>

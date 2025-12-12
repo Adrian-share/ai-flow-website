@@ -10,7 +10,7 @@ export function UseCasesSection() {
 
   const useCases = [
     {
-      icon: "Bot",
+      icon: "Share2",
       title: t("useCase1Title"),
       description: t("useCase1Desc"),
     },
@@ -20,9 +20,24 @@ export function UseCasesSection() {
       description: t("useCase2Desc"),
     },
     {
-      icon: "BarChart",
+      icon: "Mail",
       title: t("useCase3Title"),
       description: t("useCase3Desc"),
+    },
+    {
+      icon: "Database",
+      title: t("useCase4Title"),
+      description: t("useCase4Desc"),
+    },
+    {
+      icon: "Bot",
+      title: t("useCase5Title"),
+      description: t("useCase5Desc"),
+    },
+    {
+      icon: "Search",
+      title: t("useCase6Title"),
+      description: t("useCase6Desc"),
     },
   ];
 
@@ -38,7 +53,7 @@ export function UseCasesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {useCases.map((useCase, index) => {
             const IconComponent = (Icons as any)[useCase.icon];
 

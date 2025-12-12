@@ -26,15 +26,21 @@ export function HeroSection() {
         </FadeIn>
 
         <FadeIn delay={0.2}>
-          <p className="text-lg md:text-xl text-gray-400 mt-6 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/90 font-medium mb-4">
+            {t("heroSubtitle")}
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.3}>
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
             {t("heroDescription")}
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.4}>
+        <FadeIn delay={0.5}>
           <div className="mt-10">
-            <Button onClick={() => setIsFormOpen(true)} variant="primary">
-              {t("ctaConsult")}
+            <Button onClick={() => setIsFormOpen(true)} variant="primary" size="lg">
+              {t("heroButton")}
             </Button>
           </div>
         </FadeIn>

@@ -61,6 +61,13 @@ export const translations = {
     useCase6Title: "研究自动化",
     useCase6Desc: "加速研究流程",
 
+    // Workflow Demo Section
+    workflowTitle: "工作流演示",
+    workflowSubtitle: "查看 AI 工作流如何运作",
+    workflowNode1: "输入数据",
+    workflowNode2: "AI 处理",
+    workflowNode3: "输出结果",
+
     // CTA Section
     ctaTitle: "立即开始构建你的 AI 工作流",
     ctaSubtitle: "自动化应该是简单的。使用 ShareWorld，它终于实现了。",
@@ -272,6 +279,13 @@ export const translations = {
     useCase5Desc: "Build intelligent assistants",
     useCase6Title: "Research automation",
     useCase6Desc: "Accelerate research processes",
+
+    // Workflow Demo Section
+    workflowTitle: "Workflow Demo",
+    workflowSubtitle: "See how AI workflows work",
+    workflowNode1: "Input Data",
+    workflowNode2: "AI Processing",
+    workflowNode3: "Output Results",
 
     // CTA Section
     ctaTitle: "Start building your AI workflow today",

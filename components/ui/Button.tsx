@@ -4,18 +4,26 @@ import { cn } from "@/lib/utils";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: "primary" | "secondary" | "ghost";
+  size?: "sm" | "md" | "lg";
   href?: string;
 }
 
 export function Button({
   children,
   variant = "primary",
+  size = "md",
   className,
   href,
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "px-8 py-3 rounded-xl font-medium transition-all duration-300 inline-block text-center";
+    "rounded-xl font-medium transition-all duration-300 inline-block text-center";
+
+  const sizeStyles = {
+    sm: "px-4 py-2 text-sm",
+    md: "px-8 py-3",
+    lg: "px-10 py-4 text-lg",
+  };
 
   const variantStyles = {
     primary:
@@ -25,7 +33,7 @@ export function Button({
     ghost: "text-white hover:text-purple-300",
   };
 
-  const combinedStyles = cn(baseStyles, variantStyles[variant], className);
+  const combinedStyles = cn(baseStyles, sizeStyles[size], variantStyles[variant], className);
 
   if (href) {
     return (

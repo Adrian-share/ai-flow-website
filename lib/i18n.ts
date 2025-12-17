@@ -140,7 +140,7 @@ export const translations = {
     pricingPlan3Feature3: "API 访问",
     pricingPlan3Feature4: "SLA 正常运行时间保证",
     pricingPlan3Feature5: "高级支持",
-    pricingButton: "联系我们",
+    pricingButton: "立即购买",
 
     // About Page
     aboutTitle: "关于 ShareWorld",
@@ -359,7 +359,7 @@ export const translations = {
     pricingPlan3Feature3: "API access",
     pricingPlan3Feature4: "SLA uptime guarantees",
     pricingPlan3Feature5: "Premium support",
-    pricingButton: "Contact Us",
+    pricingButton: "Buy Now",
 
     // About Page
     aboutTitle: "About ShareWorld",

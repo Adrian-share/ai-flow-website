@@ -26,6 +26,7 @@ export default function PricingPage() {
         t("pricingPlan1Feature4"),
       ],
       highlighted: false,
+      link: "/contact",
     },
     {
       name: t("pricingPlan2Title"),
@@ -39,6 +40,7 @@ export default function PricingPage() {
         t("pricingPlan2Feature4"),
       ],
       highlighted: true,
+      link: "https://buy.stripe.com/6oU7sM6ZT1Mpcx60H8ao801",
     },
     {
       name: t("pricingPlan3Title"),
@@ -53,6 +55,7 @@ export default function PricingPage() {
         t("pricingPlan3Feature5"),
       ],
       highlighted: false,
+      link: "https://buy.stripe.com/5kQdRackd62FeFe61sao802",
     },
   ];
 
@@ -120,7 +123,7 @@ export default function PricingPage() {
                   </ul>
                 </div>
 
-                <Link href="/contact" className="w-full">
+                <Link href={plan.link} className="w-full" target={plan.link.startsWith("http") ? "_blank" : undefined}>
                   <Button
                     variant={plan.highlighted ? "primary" : "secondary"}
                     className="w-full"
